@@ -4,10 +4,10 @@ import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 export default function BlogHero() {
 
-  const imageAnim = useInViewAnimation<HTMLDivElement>();
-  const titleAnim = useInViewAnimation<HTMLDivElement>();
-  const textAnim = useInViewAnimation<HTMLDivElement>();
-  const subTextAnim = useInViewAnimation<HTMLDivElement>();
+  const imageAnim = useInViewAnimation();
+  const titleAnim = useInViewAnimation();
+  const textAnim = useInViewAnimation();
+  const subTextAnim = useInViewAnimation();
 
   return (
     <section className="py-24 bg-[#EEF5F1]">

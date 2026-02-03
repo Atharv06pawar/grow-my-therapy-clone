@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useInViewAnimation<T extends HTMLElement>() {
+export function useInViewAnimation() {
 
-  const ref = useRef<T | null>(null);
+  const ref = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,5 +22,8 @@ export function useInViewAnimation<T extends HTMLElement>() {
     return () => observer.disconnect();
   }, []);
 
-  return { ref, isVisible };
+  return {
+    ref: ref as unknown as React.RefObject<any>, // 🔥 UNIVERSAL FIX
+    isVisible,
+  };
 }

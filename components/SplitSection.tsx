@@ -53,7 +53,7 @@ export default function SplitSection() {
                 <li>Sleep or relaxation struggles</li>
                 <li>Feeling disconnected from yourself</li>
                 <li>Always expecting something to go wrong</li>
-            </ul>
+                </ul>
             Therapy can help you feel more grounded and safe.
           </p>
 

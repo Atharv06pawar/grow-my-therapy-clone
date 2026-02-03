@@ -4,11 +4,11 @@ import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 export default function SubscribeSection() {
 
-  const sectionAnim = useInViewAnimation<HTMLDivElement>();
-  const titleAnim = useInViewAnimation<HTMLDivElement>();
-  const textAnim = useInViewAnimation<HTMLDivElement>();
-  const formAnim = useInViewAnimation<HTMLDivElement>();
-  const privacyAnim = useInViewAnimation<HTMLDivElement>();
+  const sectionAnim = useInViewAnimation();
+  const titleAnim = useInViewAnimation();
+  const textAnim = useInViewAnimation();
+  const formAnim = useInViewAnimation();
+  const privacyAnim = useInViewAnimation();
 
   return (
     <section

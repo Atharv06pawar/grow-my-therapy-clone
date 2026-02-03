@@ -50,14 +50,14 @@ export default function GetInTouch() {
         {/* RIGHT IMAGE */}
         <div
           ref={imageAnim.ref}
-          className={`reveal-container ${
-            imageAnim.isVisible ? "" : "animate-hidden"
+          className={`reveal-container delay-4 ${
+            imageAnim.isVisible ? " " : "animate-hidden"
           }`}
         >
           <img
             src="/images/getin.png"
             alt="Therapy session visual"
-            className="flash-reveal h-[420px] w-full object-cover rounded-xl"
+            className="flash-reveal delay-4 h-[420px] w-full object-cover rounded-xl"
           />
         </div>
 
