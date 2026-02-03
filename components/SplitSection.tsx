@@ -47,11 +47,13 @@ export default function SplitSection() {
           >
             If you’re experiencing:
             <br /><br />
-            • Constant worry or overthinking<br /><br />
-            • Feeling functional but exhausted<br /><br />
-            • Sleep or relaxation struggles<br /><br />
-            • Feeling disconnected from yourself<br /><br />
-            • Always expecting something to go wrong<br /><br />
+            <ul className="space-y-2 text-lg">
+                <li>Constant worry or overthinking</li>
+                <li>Feeling functional but exhausted</li>
+                <li>Sleep or relaxation struggles</li>
+                <li>Feeling disconnected from yourself</li>
+                <li>Always expecting something to go wrong</li>
+            </ul>
             Therapy can help you feel more grounded and safe.
           </p>
 
