@@ -4,9 +4,9 @@ import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 export default function AddressSection() {
 
-  const officeAnim = useInViewAnimation();
-  const hoursAnim = useInViewAnimation();
-  const mapAnim = useInViewAnimation();
+  const officeAnim = useInViewAnimation<HTMLDivElement>();
+  const hoursAnim = useInViewAnimation<HTMLDivElement>();
+  const mapAnim = useInViewAnimation<HTMLDivElement>();
 
   return (
     <section className="py-24 bg-[#F7F3EC]">

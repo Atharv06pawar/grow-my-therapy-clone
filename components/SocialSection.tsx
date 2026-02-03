@@ -4,8 +4,8 @@ import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 export default function SocialSection() {
 
-  const titleAnim = useInViewAnimation();
-  const gridAnim = useInViewAnimation();
+  const titleAnim = useInViewAnimation<HTMLDivElement>();
+  const gridAnim = useInViewAnimation<HTMLDivElement>();
 
   return (
     <section className="py-24 bg-[#FFF6EE]">

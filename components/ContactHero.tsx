@@ -4,10 +4,10 @@ import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 export default function ContactHero() {
 
-  const titleAnim = useInViewAnimation();
-  const textAnim = useInViewAnimation();
-  const imageAnim = useInViewAnimation();
-  const noteAnim = useInViewAnimation();
+  const titleAnim = useInViewAnimation<HTMLDivElement>();
+  const textAnim = useInViewAnimation<HTMLDivElement>();
+  const imageAnim = useInViewAnimation<HTMLDivElement>();
+  const noteAnim = useInViewAnimation<HTMLDivElement>();
 
   return (
     <section className="py-24 bg-[#F8F6F2]">

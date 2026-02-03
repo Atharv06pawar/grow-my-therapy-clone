@@ -4,10 +4,10 @@ import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 export default function AppointmentSection() {
 
-  const titleAnim = useInViewAnimation();
-  const textAnim = useInViewAnimation();
-  const widgetAnim = useInViewAnimation();
-  const poweredAnim = useInViewAnimation();
+  const titleAnim = useInViewAnimation<HTMLDivElement>()
+  const textAnim = useInViewAnimation<HTMLDivElement>()
+  const widgetAnim = useInViewAnimation<HTMLDivElement>()
+  const poweredAnim = useInViewAnimation<HTMLDivElement>()
 
   return (
     <section className="py-24 bg-[#F3EFE8]">
