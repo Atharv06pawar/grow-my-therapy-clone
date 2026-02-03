@@ -2,7 +2,18 @@
 
 import { useState } from "react";
 
-export default function FAQItem({ question, answer, className = "" }) {
+type FAQItemProps = {
+  question: string;
+  answer: string;
+  className?: string;
+};
+
+export default function FAQItem({
+  question,
+  answer,
+  className = "",
+}: FAQItemProps) {
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -12,7 +23,11 @@ export default function FAQItem({ question, answer, className = "" }) {
     >
       <div className="flex justify-between items-center">
         <span className="font-medium">{question}</span>
-        <span className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`}>
+        <span
+          className={`transition-transform duration-300 ${
+            open ? "rotate-180" : ""
+          }`}
+        >
           ▼
         </span>
       </div>
